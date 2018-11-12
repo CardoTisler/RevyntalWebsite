@@ -1,0 +1,173 @@
+a, p, li, h1, h2, h3{
+    font-family: 'Comfortaa', 'Ubuntu';
+}
+h1, h2{
+    font-weight: 100;
+}
+h2{
+    font-size: 30px;
+}
+
+p, li{
+    font-size: 20px;
+}
+
+
+#header {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border-bottom: solid;
+    border-bottom-color: rgb(29, 28, 28);
+    border-bottom-width: 1px;
+    background-image: linear-gradient(to right,rgba(247, 222, 3, 0.95), rgba(247, 222, 3, 0.01))
+}
+#header img{
+    float: left;
+    margin-top: 5px;
+    margin-left: 65px;
+    width: 250px;
+    height:100px;
+}
+#navigationBar{
+    overflow: hidden;
+    margin-right: 30px;
+    padding: 0;
+    border-bottom: solid;
+    border-bottom-color: rgb(29, 28, 28);
+    border-bottom-width: 1px;
+    background-image: linear-gradient(to right,rgba(10, 10, 10, 0.95), rgba(32, 31, 31, 0.1))
+    
+}
+#navigationBar a{
+    float: right;
+    font-size: 16px; 
+    margin-right: 50px;  
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#navigationBar a:hover{
+    color:rgb(238, 198, 20);
+}
+
+body{
+    margin: 0px;
+    background-image: url(../images/SidebarGravel_2.jpg);
+}
+
+#left-column{
+    float: left;
+    width: 5%;
+}
+#left-column p{
+    color: rgba(0, 0, 0, 0);
+    float: left;
+}
+
+/* Everything in the middle column  */
+#middle-column{
+    float:left;
+    width: 90%;
+    height: 100%;
+    border-left: solid;
+    border-left-color: rgb(53, 31, 2);
+    border-left-width: 1px;
+    border-right: solid;
+    border-right-color: rgb(53, 31, 2);
+    border-right-width: 1px;
+    background-color: rgba(253, 253, 253, 0.85);
+}
+#firma-tutvustus{
+    margin: 10px;
+    padding: 5px;
+    float: left;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+#firma-tutvustus-pic{
+    width: 280px;
+    height: 280px;
+    margin: 250px 100px 10px 100px;
+    float: right;
+    overflow: auto;
+}
+#pakutavad-teenused ul{
+    text-align: left;
+    float: right;
+    margin: 70px 20px 10px 0px;
+    width: 480px;
+    padding: 5px;
+    font-size: 20px;   
+}
+#pakutavad-teenused li{
+    padding: 5px;
+}
+#pakutavad-teenused img{
+    margin: 50px 50px 50px 120px;
+    padding: 0;
+    width: 450px;
+    height: 450px;
+
+}
+#hinnakiri {
+    margin: 150px 0px 100px 100px;
+    text-align: left;
+    float: left;
+}
+
+#hinnakiri li{
+    padding: 5px;
+}
+#hinnakiri p{
+    margin: 0px 0px 0px 40px;
+}
+#hinnakiri ul{
+    width: 260px;
+}
+#hinnakiri-pic{
+    margin: 200px 300px 0px 150px;
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+#middle-column h1{
+    font-size: 50px;
+}
+#right-column{
+    float: right;
+    width: 5%;
+}
+/* Everything in the footer */
+#footer{
+    overflow: hidden;
+    border-top: solid;
+    border-top-color: black;
+    border-top-width: 1px;
+    float: left;
+    padding: 0px;
+    width: 100%;
+    margin-right: 0px;
+    background-color: rgba(20, 20, 20, 0.995);
+}
+#footer p{
+    font-size: 14px;
+    color: rgb(238, 198, 20);
+}
+#kontaktandmed{
+    margin: 5px;
+    margin-left: 300px;
+    padding: 0;
+}
+#firma-andmed{
+    float: left;
+    margin-left: 70px;
+}
+#panga-andmed{
+    position: relative;
+    left: 420px;
+    bottom: 60px;   
+}
