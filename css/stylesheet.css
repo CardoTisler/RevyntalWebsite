@@ -11,6 +11,9 @@ h2{
 p, li{
     font-size: 20px;
 }
+p, li{
+    
+}
 
 
 #header {
@@ -50,7 +53,7 @@ p, li{
     font-weight: bold;
 }
 #navigationBar a:hover{
-    color:rgb(238, 198, 19); 
+    color:rgb(238, 198, 19);
 }
 
 body{
