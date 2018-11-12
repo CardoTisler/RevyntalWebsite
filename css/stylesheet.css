@@ -50,7 +50,7 @@ p, li{
     font-weight: bold;
 }
 #navigationBar a:hover{
-    color:rgb(238, 198, 20);
+    color:rgb(238, 198, 19); 
 }
 
 body{
