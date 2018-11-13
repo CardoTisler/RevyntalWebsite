@@ -17,7 +17,9 @@ p, li{
     font-size: 20px;
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 #header {
     overflow: hidden;
@@ -104,7 +106,7 @@ body{
     text-align: left;
     float: right;
     margin: 10% 20px 10px 0px;
-    width: 35%;
+    width: 30%;
     padding: 5px;
     font-size: 20px;   
 }
@@ -116,12 +118,27 @@ body{
     padding: 0;
     width: 33%;
     height: 33%;
+    float: left;
 
 }
-#hinnakiri {
-    margin: 11% 0px 7% 7%;
+#tehnika {
+    margin: 17% 7% 7% 7%;
     text-align: left;
     float: left;
+}
+#tehnika p{
+    margin-left: 40px;
+}
+#tehnika-pic img{
+    float: right;
+    width: 25%;
+    height: 25%;
+    margin: 15% 15% 5% 5%;
+}
+#hinnakiri {
+    margin: 11% 7% 7% 3%;
+    text-align: left;
+    float: right;
 }
 #hinnakiri li{
     padding: 5px; 
@@ -130,8 +147,8 @@ body{
     margin: 0px 0px 0px 40px;
 }
 #hinnakiri-pic img{
-    margin: 14% 17% 0px 8%;
-    float: right;
+    margin: 14% 10% 4% 8%;
+    float: left;
     width: 18%;
     height: 18%;
 }
@@ -184,9 +201,11 @@ body{
     p, li{
         font-size: 25px;
     }
-
+    #tehnika{
+        margin-bottom: 4%;
+    }
 }
-@media screen and (max-width: 1222px){
+@media screen and (max-width: 1280px){
     h1{
         font-size: 40px;
     }
@@ -201,6 +220,12 @@ body{
     }
     #footer p{
         font-size: 12px;
+    }
+    #firma-tutvustus-pic img{
+        margin-top: 15%;
+    }
+    #pakutavad-teenused img{
+        margin-bottom: 0%;
     }
 }
 @media screen and (max-width: 940px){
@@ -218,5 +243,13 @@ body{
     }
     #footer p{
         font-size: 10px;
+    }
+}
+@media screen and (max-width: 1950px){
+    #pakutavad-teenused img{
+        margin-bottom: 0%;
+    }
+    #tehnika-pic img{
+        margin-top: 12%;
     }
 }
