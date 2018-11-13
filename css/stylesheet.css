@@ -122,9 +122,12 @@ body{
 
 }
 #tehnika {
-    margin: 17% 7% 7% 7%;
+    margin: 17% 7% 5% 7%;
     text-align: left;
     float: left;
+}
+#tehnika li{
+    padding: 5px;
 }
 #tehnika p{
     margin-left: 40px;
@@ -133,7 +136,7 @@ body{
     float: right;
     width: 25%;
     height: 25%;
-    margin: 15% 15% 5% 5%;
+    margin: 17% 15% 5% 5%;
 }
 #hinnakiri {
     margin: 11% 7% 7% 3%;
@@ -186,7 +189,19 @@ body{
     left: 31%;
     bottom: 4,5%;   
 }
-
+/*Galerii*/
+.pildid img{
+    width: 40%;
+    margin: 2% 1% 2% 5%;
+    padding: 5px;
+}
+#rotated-pildid img{
+    transform: rotate(90deg);
+    width: 40%;
+    
+    margin: 10% 1% 2% 5%;
+    padding: 20px;
+}
 /* Media Queries */
 @media screen and (min-width: 1610px){
     a{
@@ -251,5 +266,10 @@ body{
     }
     #tehnika-pic img{
         margin-top: 12%;
+    }
+}
+@media screen and (max-width: 1710px){
+    #tehnika{
+        margin-top: 16%;
     }
 }
