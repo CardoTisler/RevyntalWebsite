@@ -45,6 +45,12 @@ html{
     border-bottom-color: rgb(29, 28, 28);
     border-bottom-width: 1px;
     background-image: linear-gradient(to right,rgba(10, 10, 10, 0.95), rgba(32, 31, 31, 0.1));
+    
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 #navigationBar a{
     float: right; 
