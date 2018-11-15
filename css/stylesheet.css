@@ -33,7 +33,7 @@ html{
 #header img{
     float: left;
     margin-top: 5px;
-    margin-left: 65px;
+    margin-left: 5%;
     width: 18%;
     height:7%;
 }
@@ -203,23 +203,77 @@ body{
     padding: 20px;
 }
 /* Media Queries */
-@media screen and (min-width: 1610px){
-    a{
-        font-size: 21px;
+
+@media screen and (max-width: 480px){
+    #navigationBar a{
+        font-size: 9px;
     }
-    h1{
-        font-size: 60px;
-    }
-    h2{
-        font-size: 40px;
-    }
-    p, li{
+    #firma-tuvustus h1{
         font-size: 25px;
     }
-    #tehnika{
-        margin-bottom: 4%;
+    #firma-tutvustus h2{
+        font-size: 19px;
+    }
+    p, li{
+        font-size: 10px;
+    }
+    #pakutavad-teenused ul {
+        margin-right: 50%;
+        margin-bottom: 1%;
+    }
+    #firma-tutvustus-pic img{
+        width: 35%;
+        margin: 1% 32% 2% 7%;
+    }
+    #pakutavad-teenused img{
+        margin-left: 24%;
+        width: 50%;
+    }
+    #tehnika-pic img{
+        margin-right: 24%;
+        width: 50%;
+        margin-top: 1%;
+    }
+    #hinnakiri-pic img{
+        width: 0%;
+    }
+    #footer p{
+        font-size: 9px;
     }
 }
+@media screen and (max-width: 750px){
+    #firma-tutvustus{
+        margin: 1% 1% 1% 5%;
+    }
+    #pakutavad-teenused ul{
+        margin-top: 16%;
+    }
+    #pakutavad-teenused img{
+        margin-top: 20%;
+    }
+    #hinnakiri-pic img{
+        margin-right: 6%;
+        margin-top: 20%;
+    }
+}
+@media screen and (max-width: 940px){
+    a{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p, li{
+        font-size: 10px;
+    }
+    #footer p{
+        font-size: 10px;
+    }
+}
+
 @media screen and (max-width: 1280px){
     h1{
         font-size: 40px;
@@ -243,33 +297,36 @@ body{
         margin-bottom: 0%;
     }
 }
-@media screen and (max-width: 940px){
+
+@media screen and (min-width: 1610px){
     a{
-        font-size: 10px;
+        font-size: 21px;
     }
     h1{
-        font-size: 30px;
+        font-size: 60px;
     }
     h2{
-        font-size: 20px;
+        font-size: 40px;
     }
     p, li{
-        font-size: 10px;
+        font-size: 25px;
     }
-    #footer p{
-        font-size: 10px;
+    #tehnika{
+        margin-bottom: 4%;
     }
 }
+
+@media screen and (max-width: 1710px){
+    #tehnika{
+        margin-top: 16%;
+    }
+}
+
 @media screen and (max-width: 1950px){
     #pakutavad-teenused img{
         margin-bottom: 0%;
     }
     #tehnika-pic img{
         margin-top: 12%;
-    }
-}
-@media screen and (max-width: 1710px){
-    #tehnika{
-        margin-top: 16%;
     }
 }
