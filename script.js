@@ -1,10 +1,9 @@
-console.log("mingi lause");
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
 var navbar = document.getElementById("navigationBar");
-
+var midcol = document.getElementById("middle-column");
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
@@ -12,7 +11,9 @@ var sticky = navbar.offsetTop;
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
+    midcol.classList.add("midColChange")
   } else {
     navbar.classList.remove("sticky");
+    midcol.classList.remove("midColChange")
   }
 }

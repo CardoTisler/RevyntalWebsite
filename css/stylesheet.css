@@ -39,7 +39,7 @@ html{
 }
 #navigationBar{
     overflow: hidden;
-    margin-right: 30px;
+    margin-right: 2%;
     padding: 0;
     border-bottom: solid;
     border-bottom-color: rgb(29, 28, 28);
@@ -50,7 +50,11 @@ html{
 .sticky{
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 98%;
+    
+}
+.midColChange{
+    margin-top: 42px;
 }
 #navigationBar a{
     float: right; 
