@@ -17,3 +17,19 @@ function myFunction() {
     midcol.classList.remove("midColChange")
   }
 }
+function closeModal(){
+  document.getElementById("modal").style.display = "none";
+  document.getElementById("header").style.overflow = "hidden";
+}
+function openModal(){
+  document.getElementById("modal").style.display = "block";
+  document.getElementById("header").style.overflow = "inherit";
+}
+function getPic(a){
+  openModal();
+  var pic = document.getElementById('rotated-pildid').getElementsByTagName('img')[a];
+  pic.style.overflow = "hidden";
+  var modal = document.getElementById("modal-content");
+  modal.innerHTML = pic;
+
+}
