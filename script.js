@@ -17,7 +17,6 @@ function myFunction() {
     midcol.classList.remove("midColChange")
   }
 }
-
 function closeModal(){
   document.getElementById("modal").style.display = "none";
   document.getElementById("header").style.overflow = "hidden";
