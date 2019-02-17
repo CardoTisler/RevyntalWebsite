@@ -17,6 +17,7 @@ function myFunction() {
     midcol.classList.remove("midColChange")
   }
 }
+
 function closeModal(){
   document.getElementById("modal").style.display = "none";
   document.getElementById("header").style.overflow = "hidden";
@@ -26,10 +27,20 @@ function openModal(){
   document.getElementById("header").style.overflow = "inherit";
 }
 function getPic(a){
+  //opens the modal, puts blackscreen in front of everything
   openModal();
-  var pic = document.getElementById('rotated-pildid').getElementsByTagName('img')[a];
-  pic.style.overflow = "hidden";
-  var modal = document.getElementById("modal-content");
-  modal.innerHTML = pic;
+  var pic = document.getElementById('middle-column').getElementsByTagName('img')[a];
+  var modalContent = document.getElementById("modal-content");
+  //gets the picture that was clicked, clones it so it remains in the gallery
+  //then adds it to the modal.
+  var appendPic = pic.cloneNode();
+  if(modalContent.childElementCount > 0){
+    modalContent.removeChild(modalContent.childNodes[0]);
+    modalContent.appendChild(appendPic);
+  } else {
+    modalContent.appendChild(appendPic);
+  }
+  
+  modalContent.classList.add("modalContentImage");
 
 }
