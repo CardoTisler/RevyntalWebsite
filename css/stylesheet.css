@@ -169,28 +169,6 @@ body{
     width: 5%;
 }
 
-#modal{
-    display: none;
-    background-color: rgba(0, 0, 0, 0.96);
-    overflow: auto;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-}
-
-.close-cursor{
-    float: right;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    margin-right: 2%;
-    cursor: pointer;
-}
-
-.modalContentImage{
-    margin: 5% 35% 0% 40%;
-    
-}
 /* Everything in the footer */
 #footer{
     overflow: hidden;
@@ -219,15 +197,44 @@ body{
 /*Galerii*/
 .row img{
     width: 20%;
-    margin: 6% 1% 0% 7%;
+    margin: 0% 1% 0% 7%;
     padding: 1%;
     border-radius: 4%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 20px rgba(0, 0, 0, 0.2);  
     cursor: pointer;
     overflow: hidden;
 }
+.row {
+    margin: 6%;
+}
 .row img:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.726), 0 1px 20px 0 rgba(0, 0, 0, 0.733);
+}
+
+#modal{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.96);
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.close-cursor{
+    float: right;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 2%;
+    cursor: pointer;
+}
+#modal-content img{
+    width: 80%;
+}
+.modalContentImage{
+    position: fixed;
+    margin: 5% 20% 5% 30%;
+
 }
 /* Media Queries */
 
