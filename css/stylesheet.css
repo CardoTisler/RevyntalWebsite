@@ -97,49 +97,68 @@ body{
     background-color: rgba(253, 253, 253, 0.85);
 }
 #firma-tutvustus{
-    margin: 10px;
-    padding: 5px;
+    width: 96%;
+    overflow: hidden;
+    margin: 2%;
+}
+#firma-tutvustus-text{
+    margin: 7% 2% 2% 7%;
+    padding: 1%;
     float: left;
     text-align: left;
-    margin-left: 7%;
-    margin-top: 7%;
+    overflow: hidden;
+
 }
-#firma-tutvustus-pic img{
-    width: 21%;
-    height: 21%;
-    margin: 18% 7% 10px 7%;
-    float: right;
+#firma-tutvustus-pic{
+    margin: 1%;
+    overflow: hidden;
     
 }
-#pakutavad-teenused ul{
+
+#firma-tutvustus-pic img{
+    width: 60%;
+    margin: 35% 7% 1% 7%;
+    float: right;
+}
+
+#pakutavad-teenused{
+    width: 96%;
+    overflow: hidden;
+    margin: 2%;
+}
+#pakutavad-teenused-text ul{
     text-align: left;
     float: right;
-    margin: 10% 20px 10px 0px;
+    margin: 10% 2% 1% 0%;
     width: 30%;
     padding: 5px;
     font-size: 20px;   
 }
-#pakutavad-teenused li{
+#pakutavad-teenused-text li{
     padding: 5px;
 }
-#pakutavad-teenused img{
+#pakutavad-teenused-pic img{
     margin: 10% 4% 4% 9%;
     padding: 0;
     width: 33%;
     height: 33%;
     float: left;
-
 }
-#tehnika {
+#tehnika{
+    width: 96%;
+    overflow: hidden;
+    margin: 2%;
+}
+#tehnika-text {
     margin: 17% 7% 5% 7%;
     text-align: left;
     float: left;
 }
-#tehnika li{
+#tehnika-text li{
     padding: 5px;
 }
-#tehnika p{
-    margin-left: 40px;
+#tehnika-text p{
+    margin-left: 4%;
 }
 #tehnika-pic img{
     float: right;
@@ -147,15 +166,20 @@ body{
     height: 25%;
     margin: 17% 15% 5% 5%;
 }
-#hinnakiri {
+#hinnakiri{
+    width: 96%;
+    overflow: hidden;
+    margin: 2%;
+}
+#hinnakiri-text {
     margin: 11% 7% 7% 3%;
     text-align: left;
     float: right;
 }
-#hinnakiri li{
+#hinnakiri-text li{
     padding: 5px; 
 }
-#hinnakiri p{
+#hinnakiri-text p{
     margin: 0px 0px 0px 40px;
 }
 #hinnakiri-pic img{
@@ -238,24 +262,51 @@ body{
 }
 /* Media Queries */
 
-@media screen and (max-width: 1950px){
+@media screen and (min-width: 1950px){
     #pakutavad-teenused img{
         margin-bottom: 0%;
     }
     #tehnika-pic img{
-        margin-top: 12%;
+        margin-top: 8%;
+        width: 30%;
     }
     .midColChange{
         margin-top: 5.1%;
     }
+    #firma-tutvustus-pic img{
+        margin-top: 20%;
+    }
+    #pakutavad-teenused-text ul{
+        margin-top: 5%;
+    }
+    #pakutavad-teenused-pic img{
+        margin-top: 9%;
+    }
+    #tehnika-text{
+        margin-top: 8%;
+    }
+    #hinnakiri-pic img{
+        margin-top: 1%;
+        margin-left: 15%;
+    }
+    #hinnakiri-text{
+        margin-top: 1%;
+    }
+    #footer p{
+        font-size: 20px;
+    }
 }
 
-@media screen and (max-width: 1710px){
-    #tehnika{
-        margin-top: 16%;
-    }
+@media screen and (min-width: 1710px){
+
     .midColChange{
         margin-top: 4.4%;
+    }
+    #firma-tutvustus-pic img{
+        margin-top: 35%;
+    }
+    #tehnika-pic img{
+        width: 32%;
     }
 }
 
@@ -278,11 +329,62 @@ body{
     .midColChange{
         margin-top: 4.1%;
     }
+    #firma-tutvustus-pic img{
+        margin-top: 45%;
+        width: 70%;
+    }
+    #hinnakiri-pic img{
+        margin-left: 11%;
+        margin-top: 5%;
+    }
 }
 
+@media screen and (min-width: 1400px){
+    .midColChange{
+        margin-top: 3%;
+    }
+    #pakutavad-teenused-text ul{
+        margin-top: 2%;
+    }
+    #pakutavad-teenused-pic img{
+        margin-top: 7%;
+    }
+    #tehnika-text {
+        margin-top: 4%;
+    }
+    #tehnika-pic img{
+        width: 30%;
+        margin-top: 4%;
+    }
+    #hinnakiri-pic img{
+        margin-top: 4%;
+    }
+    #hinnakiri-text {
+        margin-top: 1%;
+    }
+}
 @media screen and (max-width: 1400px){
     .midColChange{
         margin-top: 3%;
+    }
+    #pakutavad-teenused-text ul{
+        margin-top: 2%;
+    }
+    #pakutavad-teenused-pic img{
+        margin-top: 7%;
+    }
+    #tehnika-text {
+        margin-top: 4%;
+    }
+    #tehnika-pic img{
+        width: 30%;
+        margin-top: 4%;
+    }
+    #hinnakiri-pic img{
+        margin-top: 4%;
+    }
+    #hinnakiri-text {
+        margin-top: 1%;
     }
 }
 
@@ -302,14 +404,31 @@ body{
     #footer p{
         font-size: 12px;
     }
-    #firma-tutvustus-pic img{
-        margin-top: 15%;
-    }
+    
     #pakutavad-teenused img{
         margin-bottom: 0%;
     }
     .midColChange{
         margin-top: 2.8%;
+    }
+    #pakutavad-teenused-text ul{
+        margin-top: 2%;
+    }
+    #pakutavad-teenused-pic img{
+        margin-top: 6%;
+    }
+    #tehnika-text {
+        margin-top: 6%;
+    }
+    #tehnika-pic img{
+        margin-top: 4%;
+        width: 30%;
+    }
+    #hinnakiri-pic img{
+        margin-top: 5%;
+    }
+    #hinnakiri-text{
+        margin-top: 3%;
     }
 }
 @media screen and (max-width: 1024px){
