@@ -257,8 +257,12 @@ body{
 }
 .modalContentImage{
     position: fixed;
-    margin: 1% 20% 5% 30%;
-
+    margin: 1% 20% 5% 35%;
+}
+.landscape-image-css{
+    position: fixed;
+    margin: 2.5% 15% 5% 22%;
+    width: 70%
 }
 /* Media Queries */
 
@@ -444,10 +448,10 @@ body{
         font-size: 30px;
     }
     h2{
-        font-size: 20px;
+        font-size: 25px;
     }
     p, li{
-        font-size: 10px;
+        font-size: 13px;
     }
     #footer p{
         font-size: 10px;
@@ -455,24 +459,39 @@ body{
     .midColChange{
         margin-top: 2.2%;
     }
+    #firma-tutvustus-pic img{
+        margin-top: 25%;
+    }
 }
 
 @media screen and (max-width: 750px){
+    h1{
+        font-size: 25px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p, li{
+        font-size: 11px;
+    }
     #firma-tutvustus{
         margin: 1% 1% 1% 5%;
     }
     #pakutavad-teenused ul{
-        margin-top: 16%;
+        margin-top: 0%;
     }
-    #pakutavad-teenused img{
-        margin-top: 20%;
+    #pakutavad-teenused-pic img{
+        margin-top: 15%;
     }
     #hinnakiri-pic img{
-        margin-right: 6%;
-        margin-top: 20%;
+        margin-top: 10%;
+        margin-left: 10%;
     }
     .midColChange{
         margin-top: 2%;
+    }
+    #firma-tutvustus-text{
+        margin-left: 2%;
     }
 }
 
@@ -489,25 +508,19 @@ body{
     p, li{
         font-size: 10px;
     }
+    #tehnika-text p{
+        margin-left: 23%;
+    }
+    #tehnika-text{
+        margin-left: -3%;
+    }
     #pakutavad-teenused ul {
-        margin-right: 50%;
+        margin-right: 23%;
         margin-bottom: 1%;
+        width: 70%;
     }
-    #firma-tutvustus-pic img{
-        width: 35%;
-        margin: 1% 32% 2% 7%;
-    }
-    #pakutavad-teenused img{
-        margin-left: 24%;
-        width: 50%;
-    }
-    #tehnika-pic img{
-        margin-right: 24%;
-        width: 50%;
-        margin-top: 1%;
-    }
-    #hinnakiri-pic img{
-        width: 0%;
+    #middle-column img{
+        display: none;
     }
     #footer p{
         font-size: 9px;

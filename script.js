@@ -20,15 +20,18 @@ function myFunction() {
 function closeModal(){
   document.getElementById("modal").style.display = "none";
   document.getElementById("header").style.overflow = "hidden";
+  
+  var modalContent = document.getElementById('modal-content');
+  modalContent.classList = "";
 }
 function openModal(){
   document.getElementById("modal").style.display = "block";
   document.getElementById("header").style.overflow = "inherit";
 }
-function getPic(a){
+function getPic(imageNumber){
   //opens the modal, puts blackscreen in front of everything
   openModal();
-  var pic = document.getElementById('middle-column').getElementsByTagName('img')[a];
+  var pic = document.getElementById('middle-column').getElementsByTagName('img')[imageNumber];
   var modalContent = document.getElementById("modal-content");
   //gets the picture that was clicked, clones it so it remains in the gallery
   //then adds it to the modal.
@@ -41,5 +44,9 @@ function getPic(a){
   }
   
   modalContent.classList.add("modalContentImage");
+}
 
+function cssToLandscapeImages(){
+  var modalContent = document.getElementById('modal-content');
+  modalContent.classList.add('landscape-image-css');
 }
