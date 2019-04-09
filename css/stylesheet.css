@@ -2,19 +2,19 @@ a, p, li, h1, h2, h3{
     font-family: 'Comfortaa', 'Ubuntu';
 }
 a{
-    font-size: 16px;
+    font-size: 1.6vw;
 }
 h1, h2{
     font-weight: 100;
 }
 h2{
-    font-size: 30px;
+    font-size: 2.4vw;
 }
 h1{
-    font-size: 50px;
+    font-size: 3vw;
 }
 p, li{
-    font-size: 20px;
+    font-size: 1.8vw;
 }
 
 html{
@@ -100,6 +100,8 @@ body{
     width: 96%;
     overflow: hidden;
     margin: 2%;
+    display: flex;
+    flex-direction: row;
 }
 #firma-tutvustus-text{
     margin: 7% 2% 2% 7%;
@@ -107,52 +109,60 @@ body{
     float: left;
     text-align: left;
     overflow: hidden;
-
+    order: 0;
 }
 #firma-tutvustus-pic{
-    margin: 1%;
+    margin: 20% 10% 10% 10%;
     overflow: hidden;
-    
+    order: 1;
+    width: 30%;
 }
 
 #firma-tutvustus-pic img{
-    width: 60%;
-    margin: 35% 7% 1% 7%;
-    float: right;
+    width: 100%;
 }
 
 #pakutavad-teenused{
     width: 96%;
     overflow: hidden;
     margin: 2%;
+    display: flex;
+    flex-direction: row;
+}
+#pakutavad-teenused-text{
+    order: 1;
+    margin-left: 6%;
 }
 #pakutavad-teenused-text ul{
     text-align: left;
-    float: right;
     margin: 10% 2% 1% 0%;
-    width: 30%;
-    padding: 5px;
-    font-size: 20px;   
+    width: 100%;
+    padding: 5px;   
 }
 #pakutavad-teenused-text li{
     padding: 5px;
 }
+#pakutavad-teenused-pic{
+    margin: 16% 1% 1% 8%;
+    width: 45%;
+}
 #pakutavad-teenused-pic img{
-    margin: 10% 4% 4% 9%;
-    padding: 0;
-    width: 33%;
-    height: 33%;
+    width: 75%;
     float: left;
+    order: 0;
 }
 #tehnika{
     width: 96%;
     overflow: hidden;
     margin: 2%;
+    display: flex;
+    flex-direction: row;
 }
 #tehnika-text {
     margin: 17% 7% 5% 7%;
     text-align: left;
     float: left;
+    order: 0;
 }
 #tehnika-text li{
     padding: 5px;
@@ -160,33 +170,39 @@ body{
 #tehnika-text p{
     margin-left: 4%;
 }
-#tehnika-pic img{
-    float: right;
+#tehnika-pic{
+    order: 1;
     width: 25%;
-    height: 25%;
-    margin: 17% 15% 5% 5%;
+    margin: 21% 1% 1% 16%;
+}
+#tehnika-pic img{
+    width: 100%;
 }
 #hinnakiri{
     width: 96%;
     overflow: hidden;
     margin: 2%;
+    display: flex;
+    flex-direction: row;
 }
 #hinnakiri-text {
-    margin: 11% 7% 7% 3%;
+    margin: 11% 3% 7% 15%;
     text-align: left;
-    float: right;
+    order: 1;
+}
+#hinnakiri-text ul{
+    -webkit-padding-start: 0px;
 }
 #hinnakiri-text li{
     padding: 5px; 
 }
-#hinnakiri-text p{
-    margin: 0% 0% 0% 13%;
+
+#hinnakiri-pic{
+    order: 0;
+    margin: 17% 1% 1% 13%;
 }
 #hinnakiri-pic img{
-    margin: 14% 10% 4% 8%;
-    float: left;
-    width: 18%;
-    height: 18%;
+    
 }
 #right-column{
     float: right;
@@ -266,7 +282,13 @@ body{
 }
 /* Media Queries */
 
-@media screen and (min-width: 1950px){
+
+
+
+
+
+
+/* @media screen and (min-width: 1950px){
     #pakutavad-teenused img{
         margin-bottom: 0%;
     }
@@ -546,4 +568,4 @@ body{
     .midColChange{
         margin-top: 0.8%;
     }
-}
+} */
