@@ -180,7 +180,7 @@ body{
     padding: 5px; 
 }
 #hinnakiri-text p{
-    margin: 0px 0px 0px 40px;
+    margin: 0% 0% 0% 13%;
 }
 #hinnakiri-pic img{
     margin: 14% 10% 4% 8%;
@@ -499,6 +499,12 @@ body{
     #navigationBar a{
         font-size: 9px;
     }
+    #hinnakiri-text ul{
+        -webkit-padding-start: 20px;
+    }
+    #hinnakiri-text{
+        float: left;
+    }
     #firma-tuvustus h1{
         font-size: 25px;
     }
@@ -521,6 +527,9 @@ body{
     }
     #middle-column img{
         display: none;
+    }
+    #hinnakiri-text{
+        margin-right: 25%;
     }
     #footer p{
         font-size: 9px;
