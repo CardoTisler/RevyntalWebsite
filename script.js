@@ -50,3 +50,14 @@ function cssToLandscapeImages(){
   var modalContent = document.getElementById('modal-content');
   modalContent.classList.add('landscape-image-css');
 }
+
+//choosing which css file to use whether 
+//viewport height > width or height < width
+//if height > width = true then it'll change the
+//css file to mobilesheet.css, which will be the
+//mobile friendly file.
+var w = window.innerWidth;
+var h = window.innerHeight;
+
+var head = document.getElementsByTagName('head')[0];
+var link = head.getElementsByClassName('css')[0];
