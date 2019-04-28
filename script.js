@@ -20,6 +20,7 @@ function myFunction() {
 function closeModal(){
   document.getElementById("modal").style.display = "none";
   document.getElementById("header").style.overflow = "hidden";
+  document.getElementById("navigationBar").style.overflow = "hidden";
   
   var modalContent = document.getElementById('modal-content');
   modalContent.classList = "";
@@ -27,6 +28,7 @@ function closeModal(){
 function openModal(){
   document.getElementById("modal").style.display = "block";
   document.getElementById("header").style.overflow = "inherit";
+  document.getElementById("navigationBar").style.overflow = "unset";
 }
 function getPic(imageNumber){
   //opens the modal, puts blackscreen in front of everything
